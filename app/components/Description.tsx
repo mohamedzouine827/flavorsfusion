@@ -15,7 +15,7 @@ export default function Description() {
             commitment to crafting <br /> unforgettable dining experiences,{" "}
             <br />
             Flavor Fusion is not just a <br />
-            restaurant; it&aspos;s a journey through <br />a world of taste.
+            restaurant; it&apos;s a journey through <br />a world of taste.
           </span>
         </div>
       </div>
