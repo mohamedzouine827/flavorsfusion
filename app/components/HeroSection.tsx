@@ -1,72 +1,35 @@
-"use client";
-import React, { useRef, useEffect } from "react";
+
 import Image from "next/image";
-import { gsap } from "gsap";
+
+import Images from "@/app/assets/unsplash_ZW9CSUdANqw.png";
 
 export default function HeroSection() {
-  const ref1 = useRef(null);
-  const ref2 = useRef(null);
-  const ref3 = useRef(null);
-
-  useEffect(() => {
-    const animate1 = () => {
-      gsap.fromTo(
-        ref1.current,
-        { x: window.innerWidth },
-        {
-          x: -window.innerWidth,
-          ease: "none",
-          duration: 8,
-          onComplete: animate1,
-        }
-      );
-    };
-
-    const animate2 = () => {
-      gsap.fromTo(
-        ref2.current,
-        { x: -window.innerWidth },
-        {
-          x: window.innerWidth,
-          ease: "none",
-          duration: 8,
-          onComplete: animate2,
-        }
-      );
-    };
-    const animate3 = () => {
-      gsap.fromTo(
-        ref3.current,
-        { x: window.innerWidth },
-        {
-          x: -window.innerWidth,
-          ease: "none",
-          duration: 10,
-          onComplete: animate3,
-        }
-      );
-    };
-
-    animate1();
-    animate2();
-    animate3();
-  }, []);
 
   return (
     <div>
-    <div className="mt-32 overflow-hidden items-center justify-center">
-      <p ref={ref1} className=" text-gray-400 text-8xl">
-        FLAVOURS FUSION FLAVOURS
-      </p>
-      <p ref={ref2} className=" text-gray-400 text-8xl mt-12">
-        FLAVOURS FUSION FLAVOURS
-      </p>
+      <div className="mt-32 overflow-hidden items-center justify-center">
+        <p className=" relative text-gray-500 text-6xl xl:text-8xl text-opacity-80">
+          FLAVOURS FUSION
+        </p>
+        <p className="relative text-gray-400 text-6xl xl:text-8xl mt-12 mx-24">FLAVOURS FUSION</p>
 
-      <p ref={ref3} className="text-gray-400 text-8xl mt-12">
-        FUSION FLAVOURS FUSION
-      </p>
-    </div>
-
+        <p className="relative text-gray-300 text-6xl xl:text-8xl mt-12 mx-32 xl:mx-48 text-opacity-80">
+          FLAVOURS FUSION
+        </p>
+      </div>
+      <div className="flex flex-col justify-end items-end  mr-20">
+      <div className="relative justify-end items-end flex mr-24  mt-[-300px] lg:mt-[-460px]">
+      <Image
+          src={Images.src}
+          alt="Hero Image"
+          width={500}
+          height={739}
+          className="w-[350px] h-[500px]"
+        />
+        
+      </div>
+      <div className="border w-[340px] h-[500px] bg-black mt-[-480px] mr-20 border-black"></div>
+      </div>
     </div>
   );
 }
