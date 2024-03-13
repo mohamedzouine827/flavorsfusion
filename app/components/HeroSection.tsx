@@ -11,9 +11,9 @@ export default function HeroSection() {
         <p className=" relative text-gray-500 text-6xl xl:text-8xl text-opacity-80">
           FLAVOURS FUSION
         </p>
-        <p className="relative text-gray-400 text-6xl xl:text-8xl mt-12 mx-24">FLAVOURS FUSION</p>
+        <p className="relative text-gray-400 text-6xl xl:text-8xl mt-16 mx-24">FLAVOURS FUSION</p>
 
-        <p className="relative text-gray-300 text-6xl xl:text-8xl mt-12 mx-32 xl:mx-48 text-opacity-80">
+        <p className="relative text-gray-300 text-6xl xl:text-8xl mt-16 mx-32 xl:mx-48 text-opacity-80">
           FLAVOURS FUSION
         </p>
       </div>
