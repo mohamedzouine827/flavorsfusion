@@ -4,7 +4,7 @@ import Images from "@/app/assets/unsplash_JE3Y9a2zgOI.png";
 export default function Description() {
   return (
     <div className="mt-2 justify-between flex">
-      <div className="mr-20 flex flex-col   mt-12">
+      <div className="ml-20 flex flex-col   mt-12">
         <div className="text-center text-gray-700 text-3xl font-normal font-['Italiana'] tracking-wide mt-12">
           <span>
             Welcome to Flavor Fusion <br /> where culinary creativity takes{" "}
